@@ -1,12 +1,15 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 
 interface Episode {
+    id: string;
     title: string;
-    members: string;
     thumbnail: string;
-    duration: Number;
-    durantionToString: string;
-    url: string;
+    description: string;
+    members: string;
+    duration: number;
+    durationAsString: string;
+    url: string
+    publishedAt: string;
 };
 
 interface PlayerContexData {
