@@ -1,15 +1,11 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 
 interface Episode {
-    id: string;
-    title: string;
-    thumbnail: string;
-    description: string;
-    members: string;
-    duration: number;
-    durationAsString: string;
-    url: string
-    publishedAt: string;
+    title: string,
+    members: string,
+    thumbnail: string,
+    duration: number,
+    url: string;
 };
 
 interface PlayerContexData {
@@ -50,7 +46,7 @@ export function PlayerContextPovider({ children }: PlayerContextProviderProps) {
         setIsPlaying(true);
     }
 
-    function playList( list: Episode[], index: number) {
+    function playList(list: Episode[], index: number) {
         setEpisodeList(list);
         setCurrentEpisodeIndex(index);
         setIsPlaying(true);
@@ -59,7 +55,7 @@ export function PlayerContextPovider({ children }: PlayerContextProviderProps) {
     const hasNext = isShuffling || (currentEpisodeIndex + 1) < episodeList.length;
     const hasPrevious = currentEpisodeIndex > 0;
     function playNext() {
-        if(isShuffling) {
+        if (isShuffling) {
             const nextRandomEpisodeIndex = Math.floor(Math.random() * episodeList.length);
             setCurrentEpisodeIndex(nextRandomEpisodeIndex);
         } else if (hasNext) {
@@ -68,7 +64,7 @@ export function PlayerContextPovider({ children }: PlayerContextProviderProps) {
     }
 
     function playPrevious() {
-        if(hasPrevious) {
+        if (hasPrevious) {
             setCurrentEpisodeIndex(currentEpisodeIndex - 1)
         }
     }
@@ -95,16 +91,16 @@ export function PlayerContextPovider({ children }: PlayerContextProviderProps) {
     }
 
     return (
-        <PlayerContext.Provider 
-            value={{ 
-                episodeList, 
-                currentEpisodeIndex, 
+        <PlayerContext.Provider
+            value={{
+                episodeList,
+                currentEpisodeIndex,
                 play,
                 playList,
                 playNext,
                 playPrevious,
-                isPlaying, 
-                togglePlay, 
+                isPlaying,
+                togglePlay,
                 setPlayingState,
                 hasNext,
                 hasPrevious,
