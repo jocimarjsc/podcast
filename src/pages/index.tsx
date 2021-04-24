@@ -10,7 +10,7 @@ import styles from "./home.module.scss";
 import { userPlayer } from "../contexts/PlayerContext";
 import Head from "next/head";
 
-interface Episodes {
+interface Episode {
   id: string;
   title: string;
   thumbnail: string;
@@ -22,8 +22,8 @@ interface Episodes {
 }
 
 interface HomeProps {
-  latesEpisodes: Episodes[];
-  allEspisodes: Episodes[];
+  latesEpisodes: Episode[];
+  allEspisodes: Episode[];
 }
 
 export default function Home({ latesEpisodes, allEspisodes }: HomeProps) {
@@ -113,7 +113,9 @@ export default function Home({ latesEpisodes, allEspisodes }: HomeProps) {
                   <td>{episode.durationAsString}</td>
 
                   <td>
-                    <button type="button" onClick={() => playList(episodeList, index + latesEpisodes.length)}>
+                    <button 
+                      type="button" 
+                      onClick={() => playList(episodeList, index + latesEpisodes.length)}>
                       <img src="/play-green.svg" alt="Tocar episódio" />
                     </button>
                   </td>
