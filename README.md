@@ -15,8 +15,10 @@
 * Sass
 * Nextjs
 * Rotas no Nextjs
-* Ref
+* Refs
 * Player de áudio
+* SSR Server Side Rendering
+* SSG Static Site Generator
 
 ### 🎉 Instalando as dependências
 
@@ -46,7 +48,7 @@ npm run build
 * Nextjs
 * Node.js
 ---
-**Jocimar Costa**
+👨🏽 **Jocimar Costa** | Developer Jr
 
 * Website Projeto: [PodCastr](https://podcastr-jocimarjsc.vercel.app/)
 * Twitter: [@jocimarcoosta](https://twitter.com/jocimarcoosta)
