@@ -1,7 +1,7 @@
 
 <p align="center">
     <a href="https://podcastr-jocimarjsc.vercel.app/" target="_blank">
-        <img alt="Podcastr" src="./public/capa.svg"  />
+        <img alt="Podcastr" src="./public/Capa.svg"  />
     </a>
 </p>
 
