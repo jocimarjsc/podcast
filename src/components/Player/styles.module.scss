@@ -135,3 +135,163 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .playerContainer {
+        width: 100vw;
+        height: 8rem;
+        flex-direction: row;
+        position: fixed; 
+        bottom: 0;
+
+        header {
+            display: none;
+        }
+
+        strong {
+            font-size: .5rem;
+        }
+
+        footer {
+            width: 33rem;
+            align-self: center;
+        }
+    }
+
+    .currentEpisode {
+        display: flex;
+
+        text-align: left;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 1rem;
+        }
+
+        .titles {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            
+
+            margin-left: 2rem;
+
+            strong {
+                width: 100%;
+                font-size: .9rem;
+                margin-top: 0;
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            span {
+                width: 100%;
+                margin-top: .1rem;
+                font-size: .8rem;
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .emptyPlayer {
+        width: 5rem;
+        height: 5rem;
+
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .progress {
+        .slider {
+            width: 100%;
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        margin-top: .5rem;
+
+        button {
+
+            &.playButton {
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .playerContainer {
+        
+        footer {
+            width: 50%;
+            align-self: center;
+        }
+    }
+
+    .currentEpisode {
+        width: 50%;
+        .titles {
+            width: 60%;
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        margin-top: .5rem;
+
+        button {
+
+            &.playButton {
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .playerContainer {
+        strong {
+            display: none;
+        }
+        
+        footer {
+            width: 100%;
+            align-self: center;
+        }
+    }
+
+    .emptyPlayer {
+        display: none;
+    }
+
+    .currentEpisode {
+        display: none;
+    }
+
+    .buttons {
+        width: 100%;
+        margin-top: .5rem;
+
+        button {
+
+            &.playButton {
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+}

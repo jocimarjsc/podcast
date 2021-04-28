@@ -80,8 +80,10 @@ export function Player() {
                         objectFit="cover"
                     />
 
-                    <strong>{episode.title}</strong>
-                    <span>{episode.members}</span>
+                    <div className={styles.titles}>
+                        <strong>{episode.title}</strong>
+                        <span>{episode.members}</span>
+                    </div>
                 </div>
             ) : (
                 <div className={styles.emptyPlayer}>
@@ -107,6 +109,7 @@ export function Player() {
                             <div className={styles.emptySlider} />
                         )}
                     </div>
+                    
                     <span>{convertDurationToTimeString(episode?.duration ?? 0)}</span>
                 </div>
 

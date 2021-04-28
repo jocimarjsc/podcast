@@ -30,6 +30,7 @@ export default function Home({ latesEpisodes, allEspisodes }: HomeProps) {
   const { playList } = userPlayer();
 
   const episodeList = [...latesEpisodes, ...allEspisodes];
+  
   return (
     <div className={styles.homePage}>
       <Head>
@@ -79,9 +80,9 @@ export default function Home({ latesEpisodes, allEspisodes }: HomeProps) {
             <tr>
               <th></th>
               <th>Podcast</th>
-              <th>Integrantes</th>
-              <th>Data</th>
-              <th>Duração</th>
+              <th className={styles.removeColumn}>Integrantes</th>
+              <th className={styles.removeColumn}>Data</th>
+              <th className={styles.removeColumn}>Duração</th>
               <th></th>
             </tr>
           </thead>
@@ -106,11 +107,11 @@ export default function Home({ latesEpisodes, allEspisodes }: HomeProps) {
                     </Link>
                   </td>
 
-                  <td>{episode.members}</td>
+                  <td className={styles.removeColumn}>{episode.members}</td>
 
-                  <td style={{ width: 100 }}>{episode.publishedAt}</td>
+                  <td className={styles.removeColumn} style={{ width: 100 }}>{episode.publishedAt}</td>
 
-                  <td>{episode.durationAsString}</td>
+                  <td className={styles.removeColumn}>{episode.durationAsString}</td>
 
                   <td>
                     <button 
