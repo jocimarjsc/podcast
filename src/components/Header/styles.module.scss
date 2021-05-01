@@ -36,9 +36,21 @@
 
 @media(max-width: 425px) {
     .headerContainer {
+        padding: 0 1.5rem;
+    }
+
+    .headerContainer {
         
         p{
             display: none;
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .headerContainer {
+        img {
+            width: 40%;
         }
     }
 }

@@ -171,7 +171,18 @@
     }
 }
 
+
+@media(max-width: 1024px) {
+    .homePage {
+        padding:  4.5rem 4rem 0;
+    }
+}
+
 @media(max-width: 768px) {
+    .homePage {
+        padding:  6rem 4rem 0;
+    }
+
     .latesEpisodes {
         ul {
             display: flex;
@@ -191,6 +202,9 @@
 }
 
 @media(max-width: 425px) {
+    .homePage {
+        padding:  4.5rem 1rem;
+    }
     .latesEpisodes {
         ul {
             
@@ -209,6 +223,7 @@
     .allEspisodes {
         table {
             th, td {
+
                 &.removeColumn {
                     display: none;
                 }
