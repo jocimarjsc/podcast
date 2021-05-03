@@ -3,7 +3,7 @@
     width: 26.5rem;
     height: 100vh;
 
-    background-color: var(--purple-500);
+    background-color: var(--theme-background-player);
     color: var(--white);
 
     display: flex;
@@ -48,7 +48,7 @@
     span {
         display: block;
         margin-top: 1rem;
-        opacity: 0.6;
+        opacity: 0.5;
         line-height: 1.5rem;
     }
 }
@@ -56,9 +56,9 @@
 .emptyPlayer {
     width: 100%;
     height: 20rem;
-    border: 1.5px dashed var(--purple-300);
+    border: 1.5px dashed var(--theme-dashed-player);
     border-radius: 1.5rem;
-    background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.8) 0%, rgba(0, 0, 0, 0)100%);
+    background: var(--theme-empty-background);
 
     padding: 4rem;
     text-align: center;
@@ -66,6 +66,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    strong {
+        opacity: .5;
+    }
 }
 
 .progress {
@@ -86,7 +90,7 @@
         .emptySlider {
             width: 100%;
             height: 4px;
-            background-color: var(--purple-300);
+            background-color: var(--theme-empty-slider);
             border-radius: 2px;
         }
     }
@@ -127,7 +131,7 @@
             width: 4rem;
             height: 4rem;
             border-radius: 1rem;
-            background-color: var(--purple-300);
+            background-color: var(--theme-play-button);
 
             &:hover:not(:disabled) {
                 filter: brightness(.95);

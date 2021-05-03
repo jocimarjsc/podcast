@@ -1,5 +1,5 @@
 .headerContainer {
-    background-color: var(--white);
+    background-color: var(--theme-header-background);
     height: 6.5rem;
 
     display: flex;
@@ -23,6 +23,19 @@
     span {
         margin-left: auto;
         text-transform: capitalize;
+        display: flex;
+        align-items: center;
+
+        .reactToggle {
+            margin-left: 2rem;
+
+            .icons {
+                position: absolute;
+                top: -.25rem;
+                left: -.1rem;
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 

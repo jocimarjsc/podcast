@@ -1,0 +1,21 @@
+.light {
+    --theme-header-background: #fff;
+    --theme-background: #f5f5f5;
+    --theme-lates-episode: var(--gray-800);
+    --theme-background-player: var(--purple-500);
+    --theme-dashed-player: var(--purple-300);
+    --theme-empty-background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.8) 0%, rgba(0, 0, 0, 0)100%);
+    --theme-empty-slider: var(--purple-300);
+    --theme-play-button: var(--purple-300);
+}
+
+.dark {
+    --theme-header-background: rgb(44, 44, 44);
+    --theme-background: #222222;
+    --theme-lates-episode: #d3d3d3;
+    --theme-background-player: #111;
+    --theme-dashed-player: #d3d3d3;
+    --theme-empty-background: #292929; 
+    --theme-empty-slider: #292929;
+    --theme-play-button: #292929;
+}

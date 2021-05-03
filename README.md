@@ -5,9 +5,12 @@
     </a>
 </p>
 
-> Projeto realizado na semana "Next Level Week", realizado pela [Rocketseet](https://github.com/Rocketseat)
->   
-> 🚧 Em breve o app estará responsível...
+> Projeto realizado na semana "Next Level Week", realizado pela [Rocketseet](https://github.com/Rocketseat)  
+
+### 🔰 New Features
+
+- [ ] 🚧 Responsivo (in progress)
+- [ ] 🚧 Theme Light / Dark (in progress)
 
 #### 🏠 [Demo do Projeto](https://podcastr-jocimarjsc.vercel.app/)
 

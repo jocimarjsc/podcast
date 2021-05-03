@@ -9,6 +9,7 @@ import { convertDurationToTimeString } from "../utils/convertDurationToTimeStrin
 import styles from "./home.module.scss";
 import { userPlayer } from "../contexts/PlayerContext";
 import Head from "next/head";
+import { useTheme } from "../contexts/themeContext";
 
 interface Episode {
   id: string;
@@ -30,9 +31,11 @@ export default function Home({ latesEpisodes, allEspisodes }: HomeProps) {
   const { playList } = userPlayer();
 
   const episodeList = [...latesEpisodes, ...allEspisodes];
+
+  const { isDark } = useTheme();
   
   return (
-    <div className={styles.homePage}>
+    <div className={`${styles.homePage} ${!isDark ? "light" : "dark"}`}>
       <Head>
         <title>Home | Podcastr</title>
       </Head>

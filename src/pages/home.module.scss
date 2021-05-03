@@ -2,6 +2,7 @@
     padding:  0 4rem;
     height: calc(100vh - 6.5rem);
     overflow-y: scroll;
+    background: var(--theme-background);
 
     h2 {
         margin-top: 3rem;
@@ -17,8 +18,8 @@
         gap: 1.5rem;
         
         li {
-            background-color: var(--white);
-            border: 1px solid var(--gray-100);
+            background-color: var(--theme-header-background);
+            border: 1px solid var(--theme-header-background);
             padding: 1.5rem;
             border-radius: 1.5rem;
             position: relative;
@@ -38,7 +39,7 @@
 
                 a {
                     display: block;
-                    color: var(--gray-800);
+                    color: var(--theme-lates-episode);
                     font-family: Lexend, sans-serif;
                     font-weight: 600;
                     text-decoration: none;
@@ -117,7 +118,7 @@
 
         th, td {
             padding: 0.75rem 1rem;
-            border-bottom: 1px solid var(--gray-100);
+            border-bottom: 1px solid var(--theme-header-background);
         }
     
         th {

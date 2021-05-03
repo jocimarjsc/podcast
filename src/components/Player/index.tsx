@@ -6,6 +6,7 @@ import "rc-slider/assets/index.css";
 import styles from"./styles.module.scss";
 import { userPlayer } from "../../contexts/PlayerContext";
 import { convertDurationToTimeString } from "../../utils/convertDurationToTimeString";
+import { useTheme } from "../../contexts/themeContext";
 
 export function Player() {
     const audioRef = useRef<HTMLAudioElement>(null);
@@ -28,6 +29,8 @@ export function Player() {
         toggleShuffle,
         clearPlayerState
     } = userPlayer();
+
+    const { isDark } = useTheme();
     
     useEffect(() => {
         if(!audioRef.current) {
@@ -64,7 +67,7 @@ export function Player() {
 
     const episode = episodeList[currentEpisodeIndex];
     return (
-        <div className={styles.playerContainer}>
+        <div className={`${styles.playerContainer} ${!isDark ? "light" : " dark"}`}>
             <header>
                 <img src="playing.svg" alt="Tocando agora"/>
 
@@ -102,7 +105,7 @@ export function Player() {
                                 value={progress}
                                 onChange={handleseek}
                                 trackStyle={{ backgroundColor: "#04d361"}}
-                                railStyle={{ backgroundColor: "#9f75ff"}}
+                                railStyle={{ backgroundColor: isDark ? "#292929" : "#9f75ff"}}
                                 handleStyle={{ borderColor: "#04d361", borderWidth: 4}}
                             />
                         ) : (
