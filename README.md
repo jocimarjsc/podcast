@@ -29,6 +29,7 @@ npm install
 ```
 
 ### 🔥 Inciando a aplicacão
+> Abra o terminal e execute o primeiro comando e não fecha, depois abre outro terminal e execute o segundo comando.
 
 ```sh
 npm server
