@@ -21,7 +21,6 @@ export function ThemeContextPovider({ children }: ThemeProviderProps) {
             localStorage.setItem("isDark", "false")
         }
         setIsDark(JSON.parse(convertIsDark))
-        console.log(JSON.parse(convertIsDark))
     }, [isDark]);
 
     function toggleTheme() {
