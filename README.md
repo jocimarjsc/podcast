@@ -31,6 +31,7 @@ npm install
 ### 🔥 Inciando a aplicacão
 
 ```sh
+npm server
 npm dev
 ```
 
