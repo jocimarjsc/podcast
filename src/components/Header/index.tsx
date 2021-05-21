@@ -8,6 +8,8 @@ import format from "date-fns/format";
 import ptBR from "date-fns/locale/pt-BR";
 import { useTheme } from "../../contexts/themeContext";
 import { HiLightBulb, HiOutlineLightBulb } from "react-icons/hi";
+import { BiMoon } from "react-icons/bi";
+import { HiOutlineSun } from "react-icons/hi";
 
 export function Header() {
     const currentDate = format(new Date(), "EEEEEE, d MMMM", {
@@ -26,8 +28,19 @@ export function Header() {
 
             <span>
                 {currentDate}
-
-                <Toggle
+                {isDark
+                ? 
+                    <HiOutlineSun 
+                        className={`${styles.reactToggle} ${styles.light}`} 
+                        onClick={toggleTheme}
+                    />
+                : 
+                    <BiMoon
+                        className={`${styles.reactToggle} ${styles.dark}`} 
+                        onClick={toggleTheme}
+                    />
+                }
+                {/* <Toggle
                     checked={isDark}
                     onChange={toggleTheme}
                     icons={{
@@ -35,7 +48,7 @@ export function Header() {
                         unchecked: <HiOutlineLightBulb color={"#fff"} className={styles.icons}/>,
                       }}
                     className={styles.reactToggle}
-                />
+                /> */}
             </span>
         </header>
     )

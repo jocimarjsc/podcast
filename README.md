@@ -9,8 +9,8 @@
 
 ### 🔰 New Features
 
-- [ ] 🚧 Responsivo (in progress)
-- [ ] 🚧 Theme Light / Dark (in progress)
+- [x] 🚧 Responsivo (in progress)
+- [x] 🚧 Theme Light / Dark (in progress)
 
 #### 🏠 [Demo do Projeto](https://podcastr-jocimarjsc.vercel.app/)
 
