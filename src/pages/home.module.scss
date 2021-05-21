@@ -4,6 +4,18 @@
     overflow-y: scroll;
     background: var(--theme-background);
 
+    &::-webkit-scrollbar {
+        border-radius: 10px;
+        height: 10px;
+        width: 6px;
+        background: rgba(0,0,0,0.4);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgba(0,0,0,0.6);
+    }
+
     h2 {
         margin-top: 3rem;
         margin-bottom: 1.5rem;
@@ -11,6 +23,7 @@
 }
 
 .latesEpisodes {
+    
     ul {
         list-style: none;
         display: grid;
