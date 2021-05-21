@@ -40,15 +40,6 @@ export function Header() {
                         onClick={toggleTheme}
                     />
                 }
-                {/* <Toggle
-                    checked={isDark}
-                    onChange={toggleTheme}
-                    icons={{
-                        checked: <HiLightBulb color={"fff"} className={styles.icons} />,
-                        unchecked: <HiOutlineLightBulb color={"#fff"} className={styles.icons}/>,
-                      }}
-                    className={styles.reactToggle}
-                /> */}
             </span>
         </header>
     )
